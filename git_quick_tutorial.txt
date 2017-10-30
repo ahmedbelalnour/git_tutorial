@@ -1,0 +1,64 @@
+1. Installation: 
+	$ sudo apt-get install git
+
+2. Configuration:
+	$ git config --global user.name "[name]"	#Sets the name you want attached to your commit transactions
+	$ git config --global user.mail "[mail]"	#Sets the mail you want attached to your commit transactions
+
+3. Create repository: 
+	move to the path you wanna create it as repository and type:
+	$ git init [project-name]	#Creates a new local repository with the specified name
+	or
+	$ git clone [url]			#Downloads a project and its entire version history
+
+4. Make changes
+	add all your files and directories
+	$ git status				#Lists all new or modified files to be committed
+	$ git add [file/.]			#Snapshots the file/all files in preparation for versioning
+	$ git reset [file/.]		#Unstages the file, but preserve its contents
+	$git commit -m "[descriptive message]"	#Records file snapshots permanently in version history
+
+5. Group changes
+
+6. Refactor filenames
+
+7. Supress tracking
+
+8. Save fragments
+
+9. Review history
+
+10. Redo commits
+
+11. Share & update:
+	Retrieving updates from another repository and updating local repos
+	$ git remote add [alias] [url]	#add a git URL as an alias
+	$ git pull [alias]				#Downloads bookmark history and incorporates changes
+	$ git push [alias] [branch]		#Transmit local branch commits to the remote repository branch
+
+
++-------+
+| Steps |
++-------+
+1. signup on github website
+2. create repository
+3. install git application on your local machine, configure, init, add files, and commit the changes
+4. pull the repository from the server
+5. push your local changes to the server
+
++---------+
+| Example |
++---------+
+create a new repository on the command line
+	echo "# git_tutorial" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git remote add origin https://github.com/ahmedbelalnour/git_tutorial.git
+	git push -u origin master
+
+or push an existing repository from the command line
+	git remote add origin https://github.com/ahmedbelalnour/git_tutorial.git
+	git push -u origin master
+
+or import code from another repository
